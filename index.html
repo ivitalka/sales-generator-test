@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <div class="main-container">
+        <button class="button">Кликни</button>
+    </div>
+
+    <div class="popup">
+        <div class="popup-container">
+            <form class="popup-form" method="POST" action="mail.php">
+                <button type="button" class="close-button"></button>
+                <div class="form-left-side">
+                    <h2 class="form-title">Получите набор файлов для руководителя:</h2>
+                    <span class="extension-icon"></span>
+                    <span class="background-image"></span>
+                </div>
+               <div class="form-right-side">
+                   <div class="input-container">
+                       <h3 class="input-title">Введите Email для получения файлов:</h3>
+                       <input name="email" class="input" type="email" placeholder="E-mail">
+                       <span></span>
+                   </div>
+                   <div class="input-container">
+                       <h3 class="input-title">Введите телефон для подтверждения доступа:</h3>
+                       <input id="phone" name="phone" class="input" type="tel" placeholder="+7 (000) 000-00-00" required minlength="11">
+                       <span></span>
+                   </div>
+                   <button type="submit" class="button-submit">Скачать файлы</button>
+                   <div class="extension-wrap">
+                       <span class="extension-item">PDF 4,7 MB</span>
+                       <span class="extension-item">DOC 0,8 MB</span>
+                       <span class="extension-item">XLS 1,2 MB</span>
+                   </div>
+
+               </div>
+            </form>
+        </div>
+
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
